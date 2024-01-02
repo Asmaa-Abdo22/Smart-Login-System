@@ -1,0 +1,51 @@
+body {
+  background-color: #24353f;
+}
+:root {
+  --bs-tertiary-bg-rgb: #24353f;
+  --bs-navbar-brand-color: white;
+  --bs-navbar-color: white;
+}
+
+div h1 {
+  color: #17a2b8;
+}
+.main {
+  box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+  margin-top: 150px !important;
+}
+bg-body-tertiary {
+  background-color: rgba(
+    var(--bs-tertiary-bg-rgb),
+    var(--bs-bg-opacity)
+  ) !important;
+}
+.navbar-brand {
+  color: var(--bs-navbar-brand-color);
+}
+/* .navbar-toggler {
+  color: var(--bs-navbar-color);
+  background-color: transparent;
+  border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
+  border-radius: var(--bs-navbar-toggler-border-radius);
+  transition: var(--bs-navbar-toggler-transition);
+} */
+.navbar {
+  --bs-navbar-color: white;
+  --bs-navbar-hover-color: white;
+  --bs-navbar-disabled-color: white;
+  --bs-navbar-active-color: white;
+  --bs-navbar-brand-color: white;
+  --bs-navbar-brand-hover-color: white;
+  --bs-navbar-toggler-border-color: white;
+}
+
+@media (max-width: 575.98px) { 
+  .main{
+    width: 80% !important;
+  }
+  h1{
+    font-size: calc(1rem + 1.5vw);
+    
+  }
+ }

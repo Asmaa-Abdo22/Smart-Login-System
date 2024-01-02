@@ -1,0 +1,72 @@
+:root {
+  --bs-body-bg: transparent;
+  --bs-body-color: white;
+  --bs-secondary-color: rgb(171, 166, 166);
+  --bs-border-color: rgb(215, 207, 207);
+  --bs-btn-hover-color: white;
+  --bs-btn-hover-bg: #17a2b8;
+  --bs-body-color: #17a2b8;
+}
+body {
+  background-color: #24353f;
+}
+.container {
+  background-color: #24353f;
+}
+.login-box {
+  box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
+h1 {
+  color: #17a2b8;
+}
+.color-red {
+  color: red;
+}
+a {
+  color: white;
+}
+.form-control {
+  color: var(--bs-body-color);
+  background-color: var(--bs-body-bg);
+  border: var(--bs-border-width) solid var(--bs-border-color);
+}
+.form-control:focus {
+  box-shadow: none;
+}
+.form-control::placeholder {
+  color: var(--bs-secondary-color);
+  opacity: 1;
+}
+.btn:hover {
+  color: var(--bs-btn-hover-color);
+  background-color: var(--bs-btn-hover-bg);
+  border-color: var(--bs-btn-hover-border-color);
+}
+.btn {
+  --bs-btn-color: var(--bs-body-color);
+  --bs-btn-bg: transparent;
+  --bs-btn-border-color: var(--bs-body-color);
+}
+.w-65 {
+  width: 65%;
+}
+.color-green {
+  color: green;
+}
+@media (max-width: 991.98px) { 
+  .login-box {
+    width: 100%;
+    
+  }
+  h1 {
+    font-size: calc(1.5rem + 1.5vw);
+  }
+}
+@media (max-width: 575.98px) {
+  .login-box {
+    width: 80% !important;
+  }
+  h1 {
+    font-size: calc(.99rem + 1.5vw);
+  }
+}

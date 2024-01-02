@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up</title>
+    <!-- &--------------FAV ICON ----------- -->
+    <link
+      rel="shortcut icon"
+      href="imgs/SignUp-Profile-Icon-v2.jpg"
+      type="image/x-icon"
+    />
+    <!-- &---------------CSS FILES------------- -->
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="CSS/login.css" />
+  </head>
+  <body>
+    <div
+      class="container my-5 d-flex justify-content-center align-items-center"
+    >
+      <div class="login-box w-65 m-auto p-5">
+        <h1 class="text-center pb-3">Smart Login System</h1>
+        <div>
+          <input
+            type="text"
+            placeholder="Enter your name"
+            id="name"
+            class="form-control"
+          />
+          <div id="alertName" class="alert alert-danger d-none">
+            please, start with capital letter and no spaces
+          </div>
+        </div>
+
+        <input
+          type="email"
+          placeholder="Enter your email"
+          id="email"
+          class="form-control my-3"
+        />
+        <div>
+          <input
+            type="password"
+            placeholder="Enter password"
+            id="password"
+            class="form-control my-3"
+          />
+          <div id="alertPass" class="alert alert-danger d-none">
+            Minimum eight characters, at least one uppercase letter, one
+            lowercase letter and one number:
+          </div>
+        </div>
+        <p class="color-red text-center d-none" id="exist">
+          Email Already Exists
+        </p>
+        <p class="color-red text-center d-none" id="message">
+          All inputs are required
+        </p>
+        <p class="color-green text-center d-none" id="sucess">Success</p>
+        <button class="btn my-4 w-100" id="signUpBtn">Sign up</button>
+        <p class="text-center text-light">
+          You have an account?
+          <a href="index.html">Sign In</a>
+        </p>
+      </div>
+    </div>
+
+    <!-- &---------------JS FILES------------- -->
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/signup.js"></script>
+  </body>
+</html>
