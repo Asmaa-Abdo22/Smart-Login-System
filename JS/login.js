@@ -18,7 +18,7 @@ loginBtn.addEventListener("click", function () {
       ) {
         var nameEntered = newArr[i].signUPName;
         localStorage.setItem("nameEntered", nameEntered);
-        location.href = "/welcome.html";
+        location.href = "./welcome.html";
         incorrect.classList.replace("d-block", "d-none");
       }else{
         incorrect.classList.replace("d-none", "d-block");
